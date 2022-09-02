@@ -20,7 +20,9 @@ if [ -d "$BACKUPDIR" ]; then
 
     echo "Backup completed" | ts
 
-    tar -zcPf $BACKUP_TAR_DIR/near_${DATE}.tar ${BACKUPDIR}/
+    rm $BACKUP_TAR_DIR/near_latest.tar
+
+    tar -zcPf $BACKUP_TAR_DIR/near_latest.tar ${BACKUPDIR}/
 
     echo "Backup Zip completed" | ts
     
