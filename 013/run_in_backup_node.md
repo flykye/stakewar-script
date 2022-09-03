@@ -35,3 +35,5 @@ sudo systemctl start neard
 journalctl -f  -u neard
 
 ```
+
+![screenshot](../013/runinbacknode.png)
